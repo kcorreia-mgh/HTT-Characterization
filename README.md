@@ -1,4 +1,4 @@
-# HTT-Characterization
+# HTT Trinucleotide Repeat Characterization
 
 This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
 
