@@ -159,11 +159,13 @@ parser = ap.ArgumentParser(description="Reads through a MiSeq analyzed summarize
 parser.add_argument("sample", help="Sample name.")
 parser.add_argument("cag_dist", help="CAG Distribution of the MiSeq analyzed sample.")
 parser.add_argument("res_f", help="Result file with structure frequencies.")
+parser.add_argument("output", help="Output prefix.")
+
 
 args = parser.parse_args()
 sample, cag_dist, res_f = args.sample, args.cag_dist, args.res_f
 
-with open(res_f, 'r') as res:
+with open(res_f, 'r') as res, open(f"{args.output}.top_alleles.txt", 'w') as out:
     # Skip header
     res.readline()
     res_start = res.tell()
@@ -230,5 +232,5 @@ with open(res_f, 'r') as res:
     header = ("sample", "miseq_cag2", "cag2_structure", "cag2_count", "cag2_freq", "miseq_cag1", "cag1_structure",
               "cag1_count", "cag1_freq", "miseq_run")
     metrics = (sample, cag2, *records[0][1:-1], cag1, *records[1][1:])
-    print("\t".join(header))
-    print("\t".join(["%s"] * len(metrics)) % metrics)
+    out.write("\t".join(header) + '\n')
+    out.write("\t".join(["%s"] * len(metrics)) % metrics + '\n')

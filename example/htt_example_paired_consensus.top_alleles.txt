@@ -1,0 +1,2 @@
+sample	miseq_cag2	cag2_structure	cag2_count	cag2_freq	miseq_cag1	cag1_structure	cag1_count	cag1_freq	miseq_run
+htt_example	17	CAG17 CAA1 CAG1 CCG1 CCA1 CCG7 CCT2 CAGCTTCCT1	2841	0.4521725290466338	45	CAG45 CAA1 CAG1 CCG1 CCA1 CCG10 CCT2 CAGCTTCCT1	1225	0.19497055546713354	htt_example_run

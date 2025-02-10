@@ -10,6 +10,7 @@ __author__ = 'kc199'
 parser = ap.ArgumentParser(description="Calculate instability metrics from Miseq data.")
 parser.add_argument("cag", help="Miseq-analyzed CAG distribution.")
 parser.add_argument("alleles", help="Identified CAG alleles for this sample.")
+parser.add_argument("output", help="Output prefix.")
 parser.add_argument("--peak_bias", type=int, default=0, help="Peak-bias for when to begin summing peak-proportions. "
                                                              "Default = 0 (begin at main peak)")
 parser.add_argument("--cutoff_override", action="store_true", help="Override 35 CAG cutoff.")
@@ -75,4 +76,4 @@ else:
         alleles['total_seq'] = total_seq
         alleles['expanded_seq'] = 'NA'
 
-alleles.to_csv(sys.stdout, sep='\t', header=True, index=False)
+alleles.to_csv(f'{args.output}.instability.txt', sep='\t', header=True, index=False)
