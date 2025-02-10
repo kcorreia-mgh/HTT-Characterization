@@ -2,7 +2,9 @@
 
 This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
 
-**htt_trinucleotide_characterization.py**
+## Workflow Overview
+
+### **htt_trinucleotide_characterization.py**
 
 Will read through flattened fastq files and analyze read(pairs) for the CAG and CCG repeat sequences in HTT. Will begin characterizing from the first instance of 3 CAG repeats until a sequence of CAGCTTCCT is encountered (downstream of the CCG repeat) or the end of the read is reached.
 
@@ -35,7 +37,8 @@ quality: "Quality System used during sequence.", choices=['p33', 'p64']
 --qstats: "Will write out quality scores statistics for the sequence. Currently only supporting proline analysis."
 
 
-**miseq_allelic_extractor.py**
+
+### **miseq_allelic_extractor.py**
 
 Takes the CAG_DISTRIBUTION output file and RESULTS output file of **htt_trinucleotide_characterization.py** and will analyze the distribution of CAG sizes and abundant sequences to determine the CAG genotype and corresponding phased sequence.
 
@@ -46,13 +49,18 @@ cag_dist: "CAG Distribution of the MiSeq analyzed sample."
 res_f: "Result file with structure frequencies."
 
 
-**miseq_instability.py**
+
+### **miseq_instability.py**
 
 Takes the CAG_DISTRIBUTION output file and the TOP_ALLELES output file and will analyze the instability of the expanded allele.
+
+[REQUIRED]
 
 cag: "Miseq-analyzed CAG distribution."
 
 alleles: "Identified CAG alleles for this sample."
+
+[OPTIONAL]
 
 --peak_bias": "Peak-bias for when to begin summing peak-proportions. Default = 0 (begin at main peak)
 
@@ -62,3 +70,6 @@ alleles: "Identified CAG alleles for this sample."
 
 --a2: "Allele 2 manual override."
 
+## EXAMPLE
+
+See the example folder for prepared input data and expected output data for your verification and validation purposes of running these scripts.
