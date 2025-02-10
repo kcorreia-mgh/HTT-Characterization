@@ -1,1 +1,0 @@
-Using r1.fq.flat and r2.fq.flat, example output can be seen within this directoy. R1 and R2 are synthetically generated data to demonstrate the workflow of this set of scripts. See README.md for an explanation of running the scripts.
