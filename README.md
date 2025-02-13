@@ -75,3 +75,8 @@ alleles: "Identified CAG alleles for this sample."
 ## EXAMPLE
 
 See the example folder for prepared input data and expected output data for your verification and validation purposes of running these scripts.
+
+
+
+[![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
+
