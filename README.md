@@ -1,4 +1,5 @@
 # HTT Trinucleotide Repeat Characterization
+# [![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
 
 This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
 
