@@ -2,6 +2,8 @@
 
 This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
 
+This workflow was created for and used in data analysis for the GEM-HD paper: "Genetic modifiers of somatic expansion and clinical phenotypes in Huntington’s disease reveal shared and tissue-specific effects" (preprint: https://www.biorxiv.org/content/10.1101/2024.06.10.597797v1; doi: https://doi.org/10.1101/2024.06.10.597797).
+
 ## Workflow Overview
 
 ### **htt_trinucleotide_characterization.py**
