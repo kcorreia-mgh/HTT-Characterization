@@ -1,5 +1,5 @@
 # HTT Trinucleotide Repeat Characterization
-# [![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
+[![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
 
 This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
 
@@ -77,7 +77,4 @@ alleles: "Identified CAG alleles for this sample."
 
 See the example folder for prepared input data and expected output data for your verification and validation purposes of running these scripts.
 
-
-
-[![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
 
