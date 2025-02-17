@@ -9,7 +9,7 @@ This workflow was created for and used in data analysis for the GEM-HD paper: "G
 
 ### **htt_trinucleotide_characterization.py**
 
-Will read through flattened fastq files and analyze read(pairs) for the CAG and CCG repeat sequences in HTT. Will begin characterizing from the first instance of 3 CAG repeats until a sequence of CAGCTTCCT is encountered (downstream of the CCG repeat) or the end of the read is reached.
+Will read through flattened fastq files and analyze read(pairs) for the CAG and CCG repeat sequences in <em>HTT</em>. Will begin characterizing from the first instance of 3 CAG repeats until a sequence of CAGCTTCCT is encountered (downstream of the CCG repeat) or the end of the read is reached.
 
 Parameters
 
