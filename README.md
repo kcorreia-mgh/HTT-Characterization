@@ -1,7 +1,7 @@
 # <em>HTT</em> Trinucleotide Repeat Characterization
 [![DOI](https://zenodo.org/badge/838543003.svg)](https://doi.org/10.5281/zenodo.14861905)
 
-This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of HTT.
+This set of scripts is a workflow for characterizing the CAG and CCG repeats in exon1 of <em>HTT</em>.
 
 This workflow was created for and used in data analysis for the GEM-HD paper: "Genetic modifiers of somatic expansion and clinical phenotypes in Huntington’s disease reveal shared and tissue-specific effects" (preprint: https://www.biorxiv.org/content/10.1101/2024.06.10.597797v1; doi: https://doi.org/10.1101/2024.06.10.597797).
 
